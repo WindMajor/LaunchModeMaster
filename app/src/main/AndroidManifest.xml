@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.company.launchmodemaster"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:name=".MasterApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/svg_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--Standard-->
+        <activity
+            android:name=".activitys.Standard_A1_Activity"
+            android:exported="true"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.Standard_A2_Activity"
+            android:exported="true"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.Standard_A3_Activity"
+            android:exported="true"
+            android:launchMode="standard"
+            android:taskAffinity=":new_one">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.Standard_A4_Activity"
+            android:exported="true"
+            android:launchMode="standard"
+            android:taskAffinity="com.company.new_two">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A4"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.Standard_A5_Activity"
+            android:exported="true"
+            android:launchMode="standard"
+            android:process=":work">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A5"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--SingleTop-->
+        <activity
+            android:name=".activitys.SingleTop_B1_Activity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleTop_B2_Activity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleTop_B3_Activity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=":new_one">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleTop_B4_Activity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.company.new_two">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B4"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleTop_B5_Activity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:process=":work">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B5"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--SingleTask-->
+        <activity
+            android:name=".activitys.SingleTask_C1_Activity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleTask_C2_Activity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleTask_C3_Activity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=":new_one">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleTask_C4_Activity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.company.new_two">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C4"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleTask_C5_Activity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:process=":work">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C5"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--SingleInstance-->
+        <activity
+            android:name=".activitys.SingleInstance_D1_Activity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleInstance_D2_Activity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleInstance_D3_Activity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity=":new_one">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleInstance_D4_Activity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.company.new_two">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D4"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SingleInstance_D5_Activity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:process=":work">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D5"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".LaunchReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

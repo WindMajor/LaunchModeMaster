@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.launchmodemaster.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/svg_arrow_back"
+        app:title="MainPage"
+        app:titleTextColor="@android:color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/indicate_group"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/toolbar">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/indicate_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/svg_keyboard_tab_"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/indicate_icon"
+            android:text="@string/indicate_text"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/start_button_group"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/select_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/choice_activity_button"
+            android:textAllCaps="false"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/choice_activity_result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/select_activity_button"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/start_activity_button"
+            android:layout_toRightOf="@id/select_activity_button"
+            android:text="123"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/choice_activity_result_desc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choice_activity_result_text"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/select_activity_button"
+            android:text=""
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/start_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/start_activity_button"
+            android:textAllCaps="false"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/start_button_group"
+        android:background="@android:color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/launch_flag_group"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_above="@id/start_button_group"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/launch_flag_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/launch_flag_title"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/launch_flag_choice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Choice"
+            android:textAllCaps="false"
+            android:textSize="12sp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/launch_flag_choice_button"
+            android:layout_toRightOf="@id/launch_flag_title">
+
+
+            <TextView
+                android:id="@+id/launch_flag_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Please Choice..."
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/launch_flag_group"
+        android:background="@android:color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/create_type_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/launch_flag_group">
+
+        <TextView
+            android:id="@+id/create_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/create_type_group"
+        android:background="@android:color/black"/>
+
+    <!--<ListView-->
+    <!--android:id="@+id/info_list_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@id/launch_flag_group"-->
+    <!--android:layout_below="@id/toolbar"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/info_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/create_type_group"
+        android:layout_below="@id/indicate_group"/>
+
+</RelativeLayout>

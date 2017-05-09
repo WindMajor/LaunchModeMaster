@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">LaunchModeMaster</string>
+
+    <string name="activity_desc_launch_flag">Please Check Launch Flag</string>
+
+    <string name="enter_launch_flag_activity">Launch Flag</string>
+
+    <string name="main_activity_title">MainActivity</string>
+    <string name="standard_a1_activity_title">Standard_A1_Activity</string>
+    <string name="standard_a2_activity_title">Standard_A2_Activity</string>
+    <string name="standard_a3_activity_title">Standard_A3_Activity</string>
+    <string name="standard_a4_activity_title">Standard_A4_Activity</string>
+    <string name="standard_a5_activity_title">Standard_A5_Activity</string>
+    <string name="single_top_b1_activity_title">SingleTop_B1_Activity</string>
+    <string name="single_top_b2_activity_title">SingleTop_B2_Activity</string>
+    <string name="single_top_b3_activity_title">SingleTop_B3_Activity</string>
+    <string name="single_top_b4_activity_title">SingleTop_B4_Activity</string>
+    <string name="single_top_b5_activity_title">SingleTop_B5_Activity</string>
+    <string name="single_task_c1_activity_title">SingleTask_C1_Activity</string>
+    <string name="single_task_c2_activity_title">SingleTask_C2_Activity</string>
+    <string name="single_task_c3_activity_title">SingleTask_C3_Activity</string>
+    <string name="single_task_c4_activity_title">SingleTask_C4_Activity</string>
+    <string name="single_task_c5_activity_title">SingleTask_C5_Activity</string>
+    <string name="single_instance_d1_activity_title">SingleInstance_D1_Activity</string>
+    <string name="single_instance_d2_activity_title">SingleInstance_D2_Activity</string>
+    <string name="single_instance_d3_activity_title">SingleInstance_D3_Activity</string>
+    <string name="single_instance_d4_activity_title">SingleInstance_D4_Activity</string>
+    <string name="single_instance_d5_activity_title">SingleInstance_D5_Activity</string>
+
+
+    <string name="start_standard">A_Standard</string>
+    <string name="start_single_top">B_SingleTop</string>
+    <string name="start_single_task">C_SingleTask</string>
+    <string name="start_single_instance">D_SingleInstance</string>
+
+    <string name="choice_activity_button">Choice Activity</string>
+    <string name="start_activity_button">Start</string>
+
+    <string name="task_id">TaskId: %s</string>
+    <string name="activity_count">ActivityCount: %s</string>
+    <string name="bottom_activity">BottomActivity:\n%s</string>
+    <string name="top_activity">TopActivity:\n%s</string>
+
+    <string name="launch_flag_title">Intent \n LaunchFlag:</string>
+
+    <string name="launch_flag_dialog_title">Please Choice Intent Launch Flag</string>
+    <string name="string_ok">OK</string>
+    <string name="string_cancel">Cancel</string>
+
+    <string name="indicate_text">从左向右是此App能读取到的Task的顺序，最左端可能是正在显示的Task</string>
+
+    <string name="create_type_from_on_create">Displayed From onCreate()</string>
+    <string name="create_type_from_on_new_intent">Displayed From onNewIntent()</string>
+
+</resources>

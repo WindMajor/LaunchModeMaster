@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/item_task_info_recycler_text_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_task_info_recycler_task_id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="id"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/item_task_info_recycler_activity_count"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:text="num"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/item_task_info_recycler_top_activity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="top"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/item_task_info_recycler_bottom_activity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="base"
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@id/item_task_info_recycler_text_group"
+        android:background="@android:color/black"/>
+
+</RelativeLayout>
