@@ -1,6 +1,7 @@
 package com.company.launchmodemaster;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.company.launchmodemaster.data.ActivityStartManager;
 import com.company.launchmodemaster.data.LaunchFlagManager;
@@ -11,11 +12,23 @@ import com.company.launchmodemaster.data.LaunchFlagManager;
 
 public class MasterApplication extends Application {
 
+    private static Context context;
+
     @Override
     public void onCreate() {
         super.onCreate();
 
         LaunchFlagManager.init();
         ActivityStartManager.init();
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        context = base;
+    }
+
+    public static Context getContext() {
+        return context;
     }
 }

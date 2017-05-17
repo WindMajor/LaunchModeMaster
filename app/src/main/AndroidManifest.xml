@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.company.launchmodemaster"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.company.launchmodemaster">
 
     <uses-permission android:name="android.permission.GET_TASKS"/>
 
@@ -21,7 +21,7 @@
 
         <!--Standard-->
         <activity
-            android:name=".activitys.Standard_A1_Activity"
+            android:name=".Standard_A1_Activity"
             android:exported="true"
             android:launchMode="standard">
             <intent-filter>
@@ -31,9 +31,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.Standard_A2_Activity"
+            android:name=".Standard_A2_Activity"
             android:exported="true"
-            android:launchMode="standard">
+            android:launchMode="standard"
+            android:taskAffinity="${applicationId}">
             <intent-filter>
                 <action android:name="launch_mode_master.STANDARD_A2"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -41,10 +42,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.Standard_A3_Activity"
+            android:name=".Standard_A3_Activity"
             android:exported="true"
             android:launchMode="standard"
-            android:taskAffinity=":new_one">
+            android:taskAffinity=":carry">
             <intent-filter>
                 <action android:name="launch_mode_master.STANDARD_A3"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -52,10 +53,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.Standard_A4_Activity"
+            android:name=".Standard_A4_Activity"
             android:exported="true"
             android:launchMode="standard"
-            android:taskAffinity="com.company.new_two">
+            android:taskAffinity="com.hero.support">
             <intent-filter>
                 <action android:name="launch_mode_master.STANDARD_A4"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -63,7 +64,7 @@
         </activity>
 
         <activity
-            android:name=".activitys.Standard_A5_Activity"
+            android:name=".Standard_A5_Activity"
             android:exported="true"
             android:launchMode="standard"
             android:process=":work">
@@ -73,9 +74,53 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".Standard_A6_Activity"
+            android:allowTaskReparenting="true"
+            android:exported="true"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A6"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Standard_A7_Activity"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A7"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Standard_A8_Activity"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A8"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Standard_A9_Activity"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="launch_mode_master.STANDARD_A9"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
         <!--SingleTop-->
         <activity
-            android:name=".activitys.SingleTop_B1_Activity"
+            android:name=".SingleTop_B1_Activity"
             android:exported="true"
             android:launchMode="singleTop">
             <intent-filter>
@@ -85,9 +130,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleTop_B2_Activity"
+            android:name=".SingleTop_B2_Activity"
             android:exported="true"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:taskAffinity="${applicationId}">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_TOP_B2"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -95,10 +141,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleTop_B3_Activity"
+            android:name=".SingleTop_B3_Activity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:taskAffinity=":new_one">
+            android:taskAffinity=":carry">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_TOP_B3"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -106,10 +152,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleTop_B4_Activity"
+            android:name=".SingleTop_B4_Activity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:taskAffinity="com.company.new_two">
+            android:taskAffinity="com.hero.support">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_TOP_B4"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -117,7 +163,7 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleTop_B5_Activity"
+            android:name=".SingleTop_B5_Activity"
             android:exported="true"
             android:launchMode="singleTop"
             android:process=":work">
@@ -127,9 +173,53 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".SingleTop_B6_Activity"
+            android:allowTaskReparenting="true"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B6"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleTop_B7_Activity"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B7"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleTop_B8_Activity"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B8"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleTop_B9_Activity"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TOP_B9"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
         <!--SingleTask-->
         <activity
-            android:name=".activitys.SingleTask_C1_Activity"
+            android:name=".SingleTask_C1_Activity"
             android:exported="true"
             android:launchMode="singleTask">
             <intent-filter>
@@ -139,9 +229,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleTask_C2_Activity"
+            android:name=".SingleTask_C2_Activity"
             android:exported="true"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:taskAffinity="${applicationId}">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_TASK_C2"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -149,10 +240,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleTask_C3_Activity"
+            android:name=".SingleTask_C3_Activity"
             android:exported="true"
             android:launchMode="singleTask"
-            android:taskAffinity=":new_one">
+            android:taskAffinity=":carry">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_TASK_C3"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -160,10 +251,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleTask_C4_Activity"
+            android:name=".SingleTask_C4_Activity"
             android:exported="true"
             android:launchMode="singleTask"
-            android:taskAffinity="com.company.new_two">
+            android:taskAffinity="com.hero.support">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_TASK_C4"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -171,7 +262,7 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleTask_C5_Activity"
+            android:name=".SingleTask_C5_Activity"
             android:exported="true"
             android:launchMode="singleTask"
             android:process=":work">
@@ -181,9 +272,53 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".SingleTask_C6_Activity"
+            android:allowTaskReparenting="true"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C6"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleTask_C7_Activity"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C7"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleTask_C8_Activity"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C8"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleTask_C9_Activity"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_TASK_C9"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
         <!--SingleInstance-->
         <activity
-            android:name=".activitys.SingleInstance_D1_Activity"
+            android:name=".SingleInstance_D1_Activity"
             android:exported="true"
             android:launchMode="singleInstance">
             <intent-filter>
@@ -193,9 +328,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleInstance_D2_Activity"
+            android:name=".SingleInstance_D2_Activity"
             android:exported="true"
-            android:launchMode="singleInstance">
+            android:launchMode="singleInstance"
+            android:taskAffinity="${applicationId}">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_INSTANCE_D2"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -203,10 +339,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleInstance_D3_Activity"
+            android:name=".SingleInstance_D3_Activity"
             android:exported="true"
             android:launchMode="singleInstance"
-            android:taskAffinity=":new_one">
+            android:taskAffinity=":carry">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_INSTANCE_D3"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -214,10 +350,10 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleInstance_D4_Activity"
+            android:name=".SingleInstance_D4_Activity"
             android:exported="true"
             android:launchMode="singleInstance"
-            android:taskAffinity="com.company.new_two">
+            android:taskAffinity="com.hero.support">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_INSTANCE_D4"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -225,12 +361,56 @@
         </activity>
 
         <activity
-            android:name=".activitys.SingleInstance_D5_Activity"
+            android:name=".SingleInstance_D5_Activity"
             android:exported="true"
             android:launchMode="singleInstance"
             android:process=":work">
             <intent-filter>
                 <action android:name="launch_mode_master.SINGLE_INSTANCE_D5"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleInstance_D6_Activity"
+            android:allowTaskReparenting="true"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D6"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleInstance_D7_Activity"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D7"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleInstance_D8_Activity"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D8"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SingleInstance_D9_Activity"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="launch_mode_master.SINGLE_INSTANCE_D9"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>

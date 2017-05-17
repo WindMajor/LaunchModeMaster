@@ -11,21 +11,41 @@
     <string name="standard_a3_activity_title">Standard_A3_Activity</string>
     <string name="standard_a4_activity_title">Standard_A4_Activity</string>
     <string name="standard_a5_activity_title">Standard_A5_Activity</string>
+    <string name="standard_a6_activity_title">Standard_A6_Activity</string>
+    <string name="standard_a7_activity_title">Standard_A7_Activity</string>
+    <string name="standard_a8_activity_title">Standard_A8_Activity</string>
+    <string name="standard_a9_activity_title">Standard_A9_Activity</string>
+
     <string name="single_top_b1_activity_title">SingleTop_B1_Activity</string>
     <string name="single_top_b2_activity_title">SingleTop_B2_Activity</string>
     <string name="single_top_b3_activity_title">SingleTop_B3_Activity</string>
     <string name="single_top_b4_activity_title">SingleTop_B4_Activity</string>
     <string name="single_top_b5_activity_title">SingleTop_B5_Activity</string>
+    <string name="single_top_b6_activity_title">SingleTop_B6_Activity</string>
+    <string name="single_top_b7_activity_title">SingleTop_B7_Activity</string>
+    <string name="single_top_b8_activity_title">SingleTop_B8_Activity</string>
+    <string name="single_top_b9_activity_title">SingleTop_B9_Activity</string>
+
     <string name="single_task_c1_activity_title">SingleTask_C1_Activity</string>
     <string name="single_task_c2_activity_title">SingleTask_C2_Activity</string>
     <string name="single_task_c3_activity_title">SingleTask_C3_Activity</string>
     <string name="single_task_c4_activity_title">SingleTask_C4_Activity</string>
     <string name="single_task_c5_activity_title">SingleTask_C5_Activity</string>
+    <string name="single_task_c6_activity_title">SingleTask_C6_Activity</string>
+    <string name="single_task_c7_activity_title">SingleTask_C7_Activity</string>
+    <string name="single_task_c8_activity_title">SingleTask_C8_Activity</string>
+    <string name="single_task_c9_activity_title">SingleTask_C9_Activity</string>
+
+
     <string name="single_instance_d1_activity_title">SingleInstance_D1_Activity</string>
     <string name="single_instance_d2_activity_title">SingleInstance_D2_Activity</string>
     <string name="single_instance_d3_activity_title">SingleInstance_D3_Activity</string>
     <string name="single_instance_d4_activity_title">SingleInstance_D4_Activity</string>
     <string name="single_instance_d5_activity_title">SingleInstance_D5_Activity</string>
+    <string name="single_instance_d6_activity_title">SingleInstance_D6_Activity</string>
+    <string name="single_instance_d7_activity_title">SingleInstance_D7_Activity</string>
+    <string name="single_instance_d8_activity_title">SingleInstance_D8_Activity</string>
+    <string name="single_instance_d9_activity_title">SingleInstance_D9_Activity</string>
 
 
     <string name="start_standard">A_Standard</string>
@@ -47,9 +67,11 @@
     <string name="string_ok">OK</string>
     <string name="string_cancel">Cancel</string>
 
-    <string name="indicate_text">从左向右是此App能读取到的Task的顺序，最左端可能是正在显示的Task</string>
+    <string name="indicate_text">从左向右列出此App能读到的Task，左一可能是正在显示的Task</string>
 
     <string name="create_type_from_on_create">Displayed From onCreate()</string>
     <string name="create_type_from_on_new_intent">Displayed From onNewIntent()</string>
+
+    <string name="toast_hint_install_launch_mode_assis_app">请安装LaunchModeMasterAssis</string>
 
 </resources>

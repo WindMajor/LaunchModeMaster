@@ -1,12 +1,13 @@
-package com.company.launchmodemaster.activitys;
+package com.company.launchmodemaster;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.company.launchmodemaster.BaseActivity;
-import com.company.launchmodemaster.R;
+/**
+ * Created by wangmeng on 17/5/17.
+ */
 
-public class SingleTask_C1_Activity extends BaseActivity {
+public class SingleInstance_D6_Activity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -15,6 +16,6 @@ public class SingleTask_C1_Activity extends BaseActivity {
 
     @Override
     protected void setToolbarTitle() {
-        toolbar.setTitle(R.string.single_task_c1_activity_title);
+        toolbar.setTitle(R.string.single_instance_d6_activity_title);
     }
 }
