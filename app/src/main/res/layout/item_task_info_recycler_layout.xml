@@ -4,18 +4,18 @@
                 android:layout_height="match_parent">
 
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/item_task_info_recycler_text_group"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="2dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/item_task_info_recycler_task_id"
-            android:layout_width="160dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:text="id"
             android:textColor="@android:color/black"/>
 
@@ -23,30 +23,26 @@
             android:id="@+id/item_task_info_recycler_activity_count"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-
+            android:layout_below="@id/item_task_info_recycler_task_id"
+            android:layout_marginTop="4dp"
             android:text="num"
             android:textColor="@android:color/black"/>
 
-        <TextView
-            android:id="@+id/item_task_info_recycler_top_activity"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="top"
-            android:textColor="@android:color/black"/>
+        <ListView
+            android:id="@+id/item_task_info_recycler_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/item_task_info_recycler_activity_count"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_task_frame"
+            android:divider="@null"
+            android:stackFromBottom="true"/>
 
 
-        <TextView
-            android:id="@+id/item_task_info_recycler_bottom_activity"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:text="base"
-            android:textColor="@android:color/black"/>
-
-
-    </LinearLayout>
+    </RelativeLayout>
 
     <View
         android:layout_width="1dp"

@@ -20,7 +20,6 @@ import android.widget.TextView;
 
 import com.company.launchmodemaster.data.ActivityStartManager;
 import com.company.launchmodemaster.data.LaunchFlagManager;
-import com.company.launchmodemaster.data.TaskManager;
 import com.company.launchmodemaster.domain.SelectActivityAdapter;
 import com.company.launchmodemaster.domain.SelectFlagAdapter;
 import com.company.launchmodemaster.domain.TaskInfoRecyclerAdapter;
@@ -156,13 +155,6 @@ public class BaseActivity extends AppCompatActivity {
 
         refreshFlagChoiceText();
         refreshActivitySelectedText();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        TaskManager.getInstance().removeActivity(getTaskId(), this);
     }
 
     private void initActivityChoiceDialog() {

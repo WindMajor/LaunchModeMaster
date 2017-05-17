@@ -173,13 +173,6 @@
         android:layout_above="@id/create_type_group"
         android:background="@android:color/black"/>
 
-    <!--<ListView-->
-    <!--android:id="@+id/info_list_view"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_above="@id/launch_flag_group"-->
-    <!--android:layout_below="@id/toolbar"/>-->
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/info_recycler_view"
         android:layout_width="match_parent"

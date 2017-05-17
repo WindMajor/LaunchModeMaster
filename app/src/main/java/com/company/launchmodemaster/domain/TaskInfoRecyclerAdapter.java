@@ -1,19 +1,17 @@
 package com.company.launchmodemaster.domain;
 
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.company.launchmodemaster.R;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by wangmeng on 17/4/9.
@@ -25,15 +23,76 @@ public class TaskInfoRecyclerAdapter extends RecyclerView.Adapter {
 
         TextView taskId;
         TextView count;
-        TextView bottomActivity;
-        TextView topActivity;
+        ListView listView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             taskId = (TextView) itemView.findViewById(R.id.item_task_info_recycler_task_id);
             count = (TextView) itemView.findViewById(R.id.item_task_info_recycler_activity_count);
-            bottomActivity = (TextView) itemView.findViewById(R.id.item_task_info_recycler_bottom_activity);
-            topActivity = (TextView) itemView.findViewById(R.id.item_task_info_recycler_top_activity);
+            listView = (ListView) itemView.findViewById(R.id.item_task_info_recycler_list_view);
+        }
+    }
+
+    private class ListViewAdapter extends BaseAdapter {
+
+        private class ListViewHolder {
+            TextView activityName;
+        }
+
+        private int activityCount;
+
+        private String bottomName;
+        private String topName;
+
+        private void setActivityCount(int activityCount) {
+            this.activityCount = activityCount;
+        }
+
+        private void setBottomName(String bottomName) {
+            this.bottomName = bottomName;
+        }
+
+        private void setTopName(String topName) {
+            this.topName = topName;
+        }
+
+        @Override
+        public int getCount() {
+            return activityCount;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return position;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            ListViewHolder listViewHolder;
+            if (convertView == null) {
+                listViewHolder = new ListViewHolder();
+                convertView = View.inflate(context, R.layout.item_task_info_recycler_list_view_layout, null);
+                listViewHolder.activityName = (TextView) convertView.findViewById(R.id.item_task_info_recycler_list_text_view);
+
+                convertView.setTag(listViewHolder);
+            } else {
+                listViewHolder = (ListViewHolder) convertView.getTag();
+            }
+
+            if (position == 0) {
+                listViewHolder.activityName.setText(topName);
+            } else if (position == activityCount - 1) {
+                listViewHolder.activityName.setText(bottomName);
+            } else {
+                listViewHolder.activityName.setText("...");
+            }
+
+            return convertView;
         }
     }
 
@@ -67,8 +126,13 @@ public class TaskInfoRecyclerAdapter extends RecyclerView.Adapter {
 
             viewHolder.taskId.setText(context.getResources().getString(R.string.task_id, String.valueOf(taskInfo.taskId)));
             viewHolder.count.setText(context.getResources().getString(R.string.activity_count, String.valueOf(taskInfo.activityCount)));
-            viewHolder.bottomActivity.setText(context.getResources().getString(R.string.bottom_activity, taskInfo.bottomActivity));
-            viewHolder.topActivity.setText(context.getResources().getString(R.string.top_activity, taskInfo.topActivity));
+
+            ListViewAdapter listViewAdapter = new ListViewAdapter();
+            listViewAdapter.setActivityCount(taskInfo.activityCount);
+            listViewAdapter.setBottomName(taskInfo.bottomActivity);
+            listViewAdapter.setTopName(taskInfo.topActivity);
+
+            viewHolder.listView.setAdapter(listViewAdapter);
         }
     }
 
