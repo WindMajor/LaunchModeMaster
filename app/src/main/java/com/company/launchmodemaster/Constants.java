@@ -42,7 +42,11 @@ public class Constants {
     public static final String SINGLE_INSTANCE_D9 = "SingleInstance_D9_ACTIVITY";
 
     public static final String ASSIS_STANDARD_A1 = "Assis_Standard_A1";
+    public static final String ASSIS_STANDARD_A2 = "Assis_Standard_A2";
     public static final String ASSIS_SINGLE_TOP_B1 = "Assis_SingleTop_B1";
+    public static final String ASSIS_SINGLE_TOP_B2 = "Assis_SingleTop_B2";
     public static final String ASSIS_SINGLE_TASK_C1 = "Assis_SingleTask_C1";
+    public static final String ASSIS_SINGLE_TASK_C2 = "Assis_SingleTask_C2";
     public static final String ASSIS_SINGLE_INSTANCE_D1 = "Assis_SingleInstance_D1";
+    public static final String ASSIS_SINGLE_INSTANCE_D2 = "Assis_SingleInstance_D2";
 }

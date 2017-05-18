@@ -113,9 +113,13 @@ public class ActivityStartManager {
         displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D9, "finishOnTaskLaunch = true"));
 
         displayActivityList.add(new ActivityContent(Constants.ASSIS_STANDARD_A1, "Other App Normal"));
+        displayActivityList.add(new ActivityContent(Constants.ASSIS_STANDARD_A2, "Other App taskAffinity = com.hero.support"));
         displayActivityList.add(new ActivityContent(Constants.ASSIS_SINGLE_TOP_B1, "Other App Normal"));
+        displayActivityList.add(new ActivityContent(Constants.ASSIS_SINGLE_TOP_B2, "Other App taskAffinity = com.hero.support"));
         displayActivityList.add(new ActivityContent(Constants.ASSIS_SINGLE_TASK_C1, "Other App Normal"));
+        displayActivityList.add(new ActivityContent(Constants.ASSIS_SINGLE_TASK_C2, "Other App taskAffinity = com.hero.support"));
         displayActivityList.add(new ActivityContent(Constants.ASSIS_SINGLE_INSTANCE_D1, "Other App Normal"));
+        displayActivityList.add(new ActivityContent(Constants.ASSIS_SINGLE_INSTANCE_D2, "Other App taskAffinity = com.hero.support"));
     }
 
     public ArrayList<ActivityContent> getAllActivityContent() {
@@ -524,6 +528,20 @@ public class ActivityStartManager {
                 }
                 break;
 
+            case Constants.ASSIS_STANDARD_A2:
+                try {
+                    if (isForResult) {
+                        activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
+                            new Intent("launch_mode_master_assis.STANDARD_A2").addCategory(Intent.CATEGORY_DEFAULT)), 2);
+                    } else {
+                        activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
+                            new Intent("launch_mode_master_assis.STANDARD_A2").addCategory(Intent.CATEGORY_DEFAULT)));
+                    }
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(MasterApplication.getContext(), R.string.toast_hint_install_launch_mode_assis_app, Toast.LENGTH_SHORT).show();
+                }
+                break;
+
             case Constants.ASSIS_SINGLE_TOP_B1:
                 try {
                     if (isForResult) {
@@ -532,6 +550,20 @@ public class ActivityStartManager {
                     } else {
                         activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
                             new Intent("launch_mode_master_assis.SINGLE_TOP_B1").addCategory(Intent.CATEGORY_DEFAULT)));
+                    }
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(MasterApplication.getContext(), R.string.toast_hint_install_launch_mode_assis_app, Toast.LENGTH_SHORT).show();
+                }
+                break;
+
+            case Constants.ASSIS_SINGLE_TOP_B2:
+                try {
+                    if (isForResult) {
+                        activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
+                            new Intent("launch_mode_master_assis.SINGLE_TOP_B2").addCategory(Intent.CATEGORY_DEFAULT)), 2);
+                    } else {
+                        activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
+                            new Intent("launch_mode_master_assis.SINGLE_TOP_B2").addCategory(Intent.CATEGORY_DEFAULT)));
                     }
                 } catch (ActivityNotFoundException e) {
                     Toast.makeText(MasterApplication.getContext(), R.string.toast_hint_install_launch_mode_assis_app, Toast.LENGTH_SHORT).show();
@@ -552,6 +584,20 @@ public class ActivityStartManager {
                 }
                 break;
 
+            case Constants.ASSIS_SINGLE_TASK_C2:
+                try {
+                    if (isForResult) {
+                        activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
+                            new Intent("launch_mode_master_assis.SINGLE_TASK_C2").addCategory(Intent.CATEGORY_DEFAULT)), 2);
+                    } else {
+                        activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
+                            new Intent("launch_mode_master_assis.SINGLE_TASK_C2").addCategory(Intent.CATEGORY_DEFAULT)));
+                    }
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(MasterApplication.getContext(), R.string.toast_hint_install_launch_mode_assis_app, Toast.LENGTH_SHORT).show();
+                }
+                break;
+
             case Constants.ASSIS_SINGLE_INSTANCE_D1:
                 try {
                     if (isForResult) {
@@ -560,6 +606,20 @@ public class ActivityStartManager {
                     } else {
                         activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
                             new Intent("launch_mode_master_assis.SINGLE_INSTANCE_D1").addCategory(Intent.CATEGORY_DEFAULT)));
+                    }
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(MasterApplication.getContext(), R.string.toast_hint_install_launch_mode_assis_app, Toast.LENGTH_SHORT).show();
+                }
+                break;
+
+            case Constants.ASSIS_SINGLE_INSTANCE_D2:
+                try {
+                    if (isForResult) {
+                        activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
+                            new Intent("launch_mode_master_assis.SINGLE_INSTANCE_D2").addCategory(Intent.CATEGORY_DEFAULT)), 2);
+                    } else {
+                        activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
+                            new Intent("launch_mode_master_assis.SINGLE_INSTANCE_D2").addCategory(Intent.CATEGORY_DEFAULT)));
                     }
                 } catch (ActivityNotFoundException e) {
                     Toast.makeText(MasterApplication.getContext(), R.string.toast_hint_install_launch_mode_assis_app, Toast.LENGTH_SHORT).show();

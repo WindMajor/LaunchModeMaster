@@ -157,6 +157,12 @@ public class BaseActivity extends AppCompatActivity {
         refreshActivitySelectedText();
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        createTypeText.setText("...");
+    }
+
     private void initActivityChoiceDialog() {
 
         selectActivityAdapter = new SelectActivityAdapter(this);
