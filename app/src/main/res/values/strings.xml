@@ -14,7 +14,6 @@
     <string name="standard_a6_activity_title">Standard_A6_Activity</string>
     <string name="standard_a7_activity_title">Standard_A7_Activity</string>
     <string name="standard_a8_activity_title">Standard_A8_Activity</string>
-    <string name="standard_a9_activity_title">Standard_A9_Activity</string>
 
     <string name="single_top_b1_activity_title">SingleTop_B1_Activity</string>
     <string name="single_top_b2_activity_title">SingleTop_B2_Activity</string>
@@ -24,7 +23,6 @@
     <string name="single_top_b6_activity_title">SingleTop_B6_Activity</string>
     <string name="single_top_b7_activity_title">SingleTop_B7_Activity</string>
     <string name="single_top_b8_activity_title">SingleTop_B8_Activity</string>
-    <string name="single_top_b9_activity_title">SingleTop_B9_Activity</string>
 
     <string name="single_task_c1_activity_title">SingleTask_C1_Activity</string>
     <string name="single_task_c2_activity_title">SingleTask_C2_Activity</string>
@@ -34,7 +32,6 @@
     <string name="single_task_c6_activity_title">SingleTask_C6_Activity</string>
     <string name="single_task_c7_activity_title">SingleTask_C7_Activity</string>
     <string name="single_task_c8_activity_title">SingleTask_C8_Activity</string>
-    <string name="single_task_c9_activity_title">SingleTask_C9_Activity</string>
 
 
     <string name="single_instance_d1_activity_title">SingleInstance_D1_Activity</string>
@@ -45,7 +42,6 @@
     <string name="single_instance_d6_activity_title">SingleInstance_D6_Activity</string>
     <string name="single_instance_d7_activity_title">SingleInstance_D7_Activity</string>
     <string name="single_instance_d8_activity_title">SingleInstance_D8_Activity</string>
-    <string name="single_instance_d9_activity_title">SingleInstance_D9_Activity</string>
 
 
     <string name="start_standard">A_Standard</string>

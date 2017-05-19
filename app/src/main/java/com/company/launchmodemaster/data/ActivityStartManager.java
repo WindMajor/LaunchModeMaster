@@ -17,7 +17,6 @@ import com.company.launchmodemaster.SingleInstance_D5_Activity;
 import com.company.launchmodemaster.SingleInstance_D6_Activity;
 import com.company.launchmodemaster.SingleInstance_D7_Activity;
 import com.company.launchmodemaster.SingleInstance_D8_Activity;
-import com.company.launchmodemaster.SingleInstance_D9_Activity;
 import com.company.launchmodemaster.SingleTask_C1_Activity;
 import com.company.launchmodemaster.SingleTask_C2_Activity;
 import com.company.launchmodemaster.SingleTask_C3_Activity;
@@ -26,7 +25,6 @@ import com.company.launchmodemaster.SingleTask_C5_Activity;
 import com.company.launchmodemaster.SingleTask_C6_Activity;
 import com.company.launchmodemaster.SingleTask_C7_Activity;
 import com.company.launchmodemaster.SingleTask_C8_Activity;
-import com.company.launchmodemaster.SingleTask_C9_Activity;
 import com.company.launchmodemaster.SingleTop_B1_Activity;
 import com.company.launchmodemaster.SingleTop_B2_Activity;
 import com.company.launchmodemaster.SingleTop_B3_Activity;
@@ -35,7 +33,6 @@ import com.company.launchmodemaster.SingleTop_B5_Activity;
 import com.company.launchmodemaster.SingleTop_B6_Activity;
 import com.company.launchmodemaster.SingleTop_B7_Activity;
 import com.company.launchmodemaster.SingleTop_B8_Activity;
-import com.company.launchmodemaster.SingleTop_B9_Activity;
 import com.company.launchmodemaster.Standard_A1_Activity;
 import com.company.launchmodemaster.Standard_A2_Activity;
 import com.company.launchmodemaster.Standard_A3_Activity;
@@ -44,7 +41,6 @@ import com.company.launchmodemaster.Standard_A5_Activity;
 import com.company.launchmodemaster.Standard_A6_Activity;
 import com.company.launchmodemaster.Standard_A7_Activity;
 import com.company.launchmodemaster.Standard_A8_Activity;
-import com.company.launchmodemaster.Standard_A9_Activity;
 import com.company.launchmodemaster.Utils;
 import com.company.launchmodemaster.domain.ActivityContent;
 
@@ -78,9 +74,8 @@ public class ActivityStartManager {
         displayActivityList.add(new ActivityContent(Constants.STANDARD_A4, "taskAffinity = com.hero.support"));
         displayActivityList.add(new ActivityContent(Constants.STANDARD_A5, "process = :work"));
         displayActivityList.add(new ActivityContent(Constants.STANDARD_A6, "allowTaskReparenting = true"));
-        displayActivityList.add(new ActivityContent(Constants.STANDARD_A7, "alwaysRetainTaskState = true"));
-        displayActivityList.add(new ActivityContent(Constants.STANDARD_A8, "clearTaskOnLaunch = true"));
-        displayActivityList.add(new ActivityContent(Constants.STANDARD_A9, "finishOnTaskLaunch = true"));
+        displayActivityList.add(new ActivityContent(Constants.STANDARD_A7, "finishOnTaskLaunch = true"));
+        displayActivityList.add(new ActivityContent(Constants.STANDARD_A8, "excludeFromRecents = true"));
 
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B1, "Normal"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B2, "taskAffinity = ${applicationId}"));
@@ -88,9 +83,8 @@ public class ActivityStartManager {
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B4, "taskAffinity = com.hero.support"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B5, "process = :work"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B6, "allowTaskReparenting = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B7, "alwaysRetainTaskState = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B8, "clearTaskOnLaunch = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B9, "finishOnTaskLaunch = true"));
+        displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B7, "finishOnTaskLaunch = true"));
+        displayActivityList.add(new ActivityContent(Constants.SINGLE_TOP_B8, "excludeFromRecents = true"));
 
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C1, "Normal"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C2, "taskAffinity = ${applicationId}"));
@@ -98,9 +92,8 @@ public class ActivityStartManager {
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C4, "taskAffinity = com.hero.support"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C5, "process = :work"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C6, "allowTaskReparenting = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C7, "alwaysRetainTaskState = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C8, "clearTaskOnLaunch = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C9, "finishOnTaskLaunch = true"));
+        displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C7, "finishOnTaskLaunch = true"));
+        displayActivityList.add(new ActivityContent(Constants.SINGLE_TASK_C8, "excludeFromRecents = true"));
 
         displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D1, "Normal"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D2, "taskAffinity = ${applicationId}"));
@@ -108,9 +101,8 @@ public class ActivityStartManager {
         displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D4, "taskAffinity = com.hero.support"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D5, "process = :work"));
         displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D6, "allowTaskReparenting = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D7, "alwaysRetainTaskState = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D8, "clearTaskOnLaunch = true"));
-        displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D9, "finishOnTaskLaunch = true"));
+        displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D7, "finishOnTaskLaunch = true"));
+        displayActivityList.add(new ActivityContent(Constants.SINGLE_INSTANCE_D8, "excludeFromRecents = true"));
 
         displayActivityList.add(new ActivityContent(Constants.ASSIS_STANDARD_A1, "Other App Normal"));
         displayActivityList.add(new ActivityContent(Constants.ASSIS_STANDARD_A2, "Other App taskAffinity = com.hero.support"));
@@ -232,16 +224,6 @@ public class ActivityStartManager {
                 }
                 break;
 
-            case Constants.STANDARD_A9:
-                if (isForResult) {
-                    activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
-                        new Intent(activity, Standard_A9_Activity.class)), 2);
-                } else {
-                    activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
-                        new Intent(activity, Standard_A9_Activity.class)));
-                }
-                break;
-
             case Constants.SINGLE_TOP_B1:
                 if (isForResult) {
                     activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
@@ -319,16 +301,6 @@ public class ActivityStartManager {
                 } else {
                     activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
                         new Intent(activity, SingleTop_B8_Activity.class)));
-                }
-                break;
-
-            case Constants.SINGLE_TOP_B9:
-                if (isForResult) {
-                    activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
-                        new Intent(activity, SingleTop_B9_Activity.class)), 2);
-                } else {
-                    activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
-                        new Intent(activity, SingleTop_B9_Activity.class)));
                 }
                 break;
 
@@ -413,16 +385,6 @@ public class ActivityStartManager {
                 }
                 break;
 
-            case Constants.SINGLE_TASK_C9:
-                if (isForResult) {
-                    activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
-                        new Intent(activity, SingleTask_C9_Activity.class)), 2);
-                } else {
-                    activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
-                        new Intent(activity, SingleTask_C9_Activity.class)));
-                }
-                break;
-
             case Constants.SINGLE_INSTANCE_D1:
                 if (isForResult) {
                     activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
@@ -502,17 +464,6 @@ public class ActivityStartManager {
                         new Intent(activity, SingleInstance_D8_Activity.class)));
                 }
                 break;
-
-            case Constants.SINGLE_INSTANCE_D9:
-                if (isForResult) {
-                    activity.startActivityForResult(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
-                        new Intent(activity, SingleInstance_D9_Activity.class)), 2);
-                } else {
-                    activity.startActivity(Utils.addFlagToIntent(LaunchFlagManager.getInstance().getCheckedFlagList(),
-                        new Intent(activity, SingleInstance_D9_Activity.class)));
-                }
-                break;
-
 
             case Constants.ASSIS_STANDARD_A1:
                 try {

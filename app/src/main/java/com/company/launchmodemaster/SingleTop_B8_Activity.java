@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 /**
- * Created by wangmeng on 17/5/17.
+ * Created by wangmeng on 17/5/19.
  */
 
 public class SingleTop_B8_Activity extends BaseActivity {
